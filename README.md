@@ -1,0 +1,39 @@
+# Auto-Explore Shearing Extension
+
+Extends AutoExplore to shear shearable NPCs throughout the current map, including those outside your sight.
+
+Requires [AutoExplore](https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584). Install and enable both mods, select shears, choose **Gather** or **Combined** mode, then start AutoExplore normally. No extra key binding needed.
+
+A similar mod, Auto Act, also provides automatic shearing. This add-on lets you do it through AutoExplore. Auto Act is not required.
+
+**Note:** To use it at home or on your own land, enable **AllowOnOwnLand** in AutoExplore's settings.
+
+Japanese and Simplified Chinese translations: Codex (AI).
+
+---
+
+## 日本語
+
+AutoExploreに毛刈り機能を追加します。現在のマップにいる毛刈り可能なNPCが対象で、視界の外にいても探しに行きます。
+
+[AutoExplore](https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584)が必要です。両方のMODを導入して有効にし、ハサミを選び、**採取モード**または**複合モード**で通常どおりAutoExploreを開始してください。追加のキー設定は不要です。
+
+同様のMOD「Auto Act」にも自動毛刈り機能があります。このMODはAutoExploreから毛刈りできるようにするものです。Auto Actは不要です。
+
+**注意：** 自分の拠点や土地で使うには、AutoExploreの設定で**AllowOnOwnLand**を有効にしてください。
+
+日本語・簡体字中国語訳：Codex（AI）。
+
+---
+
+## 简体中文
+
+为AutoExplore添加自动剪毛功能，寻找当前地图上所有可剪毛的NPC，包括视野外的目标。
+
+需要[AutoExplore](https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584)。安装并启用这两个MOD，选中剪刀，切换到**采集**或**综合模式**，然后照常启动AutoExplore。无需额外设置快捷键。
+
+类似的MOD「Auto Act」也提供自动剪毛。本MOD让你通过AutoExplore使用此功能，不需要安装Auto Act。
+
+**注意：** 在自己的家园或领地使用时，请在AutoExplore的设置中开启**AllowOnOwnLand**。
+
+日语和简体中文翻译：Codex（AI）。

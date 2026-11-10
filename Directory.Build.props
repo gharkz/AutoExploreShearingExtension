@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <ElinDir Condition="'$(ElinDir)' == ''">$(ELIN_DIR)</ElinDir>
+    <AutoExploreDll Condition="'$(AutoExploreDll)' == ''">$(AUTOEXPLORE_DLL)</AutoExploreDll>
+    <AutoExploreDll Condition="'$(AutoExploreDll)' == ''">$(ElinDir)/../../workshop/content/2135150/3365829584/Elin_AutoExplore.dll</AutoExploreDll>
+    <Deterministic>true</Deterministic>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PathMap>$(MSBuildThisFileDirectory)=/_/</PathMap>
+  </PropertyGroup>
+  <Target Name="RequireInstalledDependencies" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="'$(ElinDir)' == ''" Text="Set ELIN_DIR or pass -p:ElinDir=PATH to the Elin installation." />
+    <Error Condition="!Exists('$(AutoExploreDll)')" Text="Set AUTOEXPLORE_DLL or pass -p:AutoExploreDll=PATH to Elin_AutoExplore.dll." />
+  </Target>
+</Project>
