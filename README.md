@@ -1,5 +1,7 @@
 # Auto-Explore Shearing Extension
 
+**Install:** [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3837309390)
+
 Extends AutoExplore to shear shearable NPCs throughout the current map, including those outside your sight.
 
 Requires [AutoExplore](https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584). Install and enable both mods, select shears, choose **Gather** or **Combined** mode, then start AutoExplore normally. No extra key binding needed.
@@ -14,6 +16,8 @@ Japanese and Simplified Chinese translations: Codex (AI).
 
 ## 日本語
 
+**導入：** [Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=3837309390)
+
 AutoExploreに毛刈り機能を追加します。現在のマップにいる毛刈り可能なNPCが対象で、視界の外にいても探しに行きます。
 
 [AutoExplore](https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584)が必要です。両方のMODを導入して有効にし、ハサミを選び、**採取モード**または**複合モード**で通常どおりAutoExploreを開始してください。追加のキー設定は不要です。
@@ -27,6 +31,8 @@ AutoExploreに毛刈り機能を追加します。現在のマップにいる毛
 ---
 
 ## 简体中文
+
+**安装：** [Steam创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3837309390)
 
 为AutoExplore添加自动剪毛功能，寻找当前地图上所有可剪毛的NPC，包括视野外的目标。
 

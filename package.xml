@@ -6,7 +6,7 @@
   <version>0.23.355</version>
   <loadPriority>120</loadPriority>
   <tags>General,QoL,Utility,english,japanese,schinese</tags>
-  <visibility>Private</visibility>
+  <visibility>Public</visibility>
   <description>
 [quote]
 Extends AutoExplore to shear shearable NPCs throughout the current map, including those outside your sight.
