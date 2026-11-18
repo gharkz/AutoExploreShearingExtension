@@ -10,7 +10,7 @@ using Explorer = Elin_AutoExplore.Plugin;
 
 namespace AutoExploreShearing
 {
-    [BepInPlugin(Id, DisplayName, "1.0.0")]
+    [BepInPlugin(Id, DisplayName, "1.0.1")]
     // Elin creates a separate chainloader per package. A hard dependency cannot
     // see plugins loaded by another package's chainloader; validate at runtime.
     [BepInDependency("yuof.elin.autoExplore.mod", BepInDependency.DependencyFlags.SoftDependency)]
@@ -29,7 +29,7 @@ namespace AutoExploreShearing
             try
             {
                 Install(Config);
-                Logger.LogInfo(DisplayName + " 1.0.0 active; early-exit and full-search hooks installed.");
+                Logger.LogInfo(DisplayName + " 1.0.1 active; early-exit and full-search hooks installed.");
             }
             catch (Exception e)
             {
@@ -86,11 +86,16 @@ namespace AutoExploreShearing
                 CanAffordOrRest(pc, target);
         }
 
-        private static bool CanAffordOrRest(Chara pc, Chara target)
+        // Affordable after a rest: the job rests first through AutoExplore's own routine when stamina is low.
+        private static bool CanAffordOrRest(Chara pc, Chara target) => pc.stamina.max > ExploreShear.StaminaCost(pc, target);
+
+        // AutoExplore's own rest (sets a carried bed down and sleeps, packs it up after; otherwise its usual resting).
+        // Private in AutoExplore, so reached by reflection; false when unavailable.
+        private static readonly MethodInfo tryRest = AccessTools.Method(typeof(Explorer), "TryRest");
+        internal static bool Rest()
         {
-            var cost = ExploreShear.StaminaCost(pc, target);
-            return pc.stamina.value > cost || (pc.stamina.max > cost &&
-                Explorer.Instance.AutoExplorerConfig.UseMeditation.Value && Explorer.CanRestOn(pc.pos, pc));
+            try { return tryRest != null && Explorer.Instance != null && (bool)tryRest.Invoke(Explorer.Instance, null); }
+            catch { return false; }
         }
 
         internal static bool RecentlyFailed(Chara target) => failures.TryGetValue(target, out var failed) &&
@@ -150,15 +155,9 @@ namespace AutoExploreShearing
         {
             isFail = () => !Plugin.Ready || !Target.IsAliveInCurrentZone;
             if (!Plugin.Ready || !Plugin.Eligible(Target)) yield break;
-            // Native shearing spends one stamina per affected NPC. Preserve a
-            // positive reserve, including wide shears, using native meditation.
-            if (!EnoughStamina(owner, Target))
-            {
-                if (!Elin_AutoExplore.Plugin.Instance.AutoExplorerConfig.UseMeditation.Value ||
-                    !Elin_AutoExplore.Plugin.CanRestOn(owner.pos, owner)) yield break;
-                yield return Do(new AI_Meditate(), Failed);
-                if (!Plugin.Ready || !Plugin.Eligible(Target) || !EnoughStamina(owner, Target)) yield break;
-            }
+            // Native shearing spends one stamina per affected NPC. When short, rest
+            // the way AutoExplore normally does (bed included), then shear later.
+            if (!EnoughStamina(owner, Target)) { Plugin.Rest(); yield break; }
             yield return Do(new NativeShear { target = Target }, Failed);
         }
 

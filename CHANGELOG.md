@@ -1,3 +1,11 @@
+# 1.0.1
+
+Fix: when stamina runs low, rests the way AutoExplore normally does (sleeping in your bed if you carry one) instead of meditating, so you no longer pass out mid-shearing.
+
+修正：スタミナが減ったとき、瞑想ではなくAutoExplore本来の休憩（ベッドを持っていればベッドで睡眠）を行うようにしました。毛刈り中に倒れなくなります。
+
+修复：体力不足时，不再冥想，而是按AutoExplore原本的方式休息（携带床时会在床上睡觉），剪毛途中不会再晕倒。
+
 # 1.0.0
 
 Initial release: adds map-wide shearing to AutoExplore while shears are selected.
