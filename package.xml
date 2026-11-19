@@ -10,7 +10,9 @@
   <description>[quote]
 Extends AutoExplore to shear shearable NPCs throughout the current map.
 
-Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584]AutoExplore[/url]. Install and enable both mods, select shears, choose Gather or Combined mode, then start AutoExplore normally. No extra key binding needed.
+Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584]Yuof's AutoExplore[/url]. Install and enable both mods, select shears, choose Gather or Combined mode, then start AutoExplore normally. No extra key binding needed.
+
+Now part of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3842218923]AutoExplore Extended[/url], which adds more tools and a settings window. Use either one: if both are enabled, Extended leaves shearing to this mod.
 
 A similar mod, Auto Act, also provides automatic shearing. This add-on lets you do it through AutoExplore. Auto Act is not required.
 
@@ -26,7 +28,9 @@ Source: https://github.com/gharkz/AutoExploreShearingExtension
 [quote]
 AutoExploreに毛刈り機能を追加します。現在のマップにいる毛刈り可能なNPCが対象です。
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584]AutoExplore[/url]が必要です。両方のMODを導入して有効にし、ハサミを選び、採取モードまたは複合モードで通常どおりAutoExploreを開始してください。追加のキー設定は不要です。
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584]YuofさんのAutoExplore[/url]が必要です。両方のMODを導入して有効にし、ハサミを選び、採取モードまたは複合モードで通常どおりAutoExploreを開始してください。追加のキー設定は不要です。
+
+現在は[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3842218923]AutoExplore Extended[/url]にも含まれています（道具の追加と設定画面付き）。どちらを使っても構いません。両方有効な場合、毛刈りはこのMODが担当します。
 
 同様のMOD「Auto Act」にも自動毛刈り機能があります。このMODはAutoExploreから毛刈りできるようにするものです。Auto Actは不要です。
 
@@ -42,7 +46,9 @@ AutoExploreに毛刈り機能を追加します。現在のマップにいる毛
 [quote]
 为AutoExplore添加自动剪毛功能，寻找当前地图上所有可剪毛的NPC。
 
-需要[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584]AutoExplore[/url]。安装并启用这两个MOD，选中剪刀，切换到采集或综合模式，然后照常启动AutoExplore。无需额外设置快捷键。
+需要[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3365829584]Yuof的AutoExplore[/url]。安装并启用这两个MOD，选中剪刀，切换到采集或综合模式，然后照常启动AutoExplore。无需额外设置快捷键。
+
+现已并入[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3842218923]AutoExplore Extended[/url]（更多工具和设置窗口）。任选其一即可；两者都启用时，剪毛由本MOD负责。
 
 类似的MOD「Auto Act」也提供自动剪毛。本MOD让你通过AutoExplore使用此功能，不需要安装Auto Act。
 
